@@ -11,8 +11,27 @@ config_version=5
 [application]
 
 config/name="cubes"
+run/main_scene="res://src/ui/menu/main_menu.tscn"
 config/features=PackedStringArray("4.0", "Mobile")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Save="*res://src/singletons/save.gd"
+Global="*res://src/singletons/global.gd"
+
+[display]
+
+window/size/viewport_width=1080
+window/size/viewport_height=1920
+window/size/resizable=false
+window/size/window_width_override=360
+window/size/window_height_override=640
+window/handheld/orientation=1
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
 
 [rendering]
 
